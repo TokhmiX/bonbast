@@ -17,7 +17,7 @@ jobs:
            php-version: '8.1'
 
       - name: run
-        run: php example.php >> price.json
+        run: php example.php > price.json
 
       - name: commit files
         run: |
