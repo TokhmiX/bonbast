@@ -104,7 +104,7 @@ class BonBast
     /**
      * Extract "body parameters" which are hard coded in homepage response
      */
-    preg_match('/data\:"(.*?)"/s', $homepage, $matches);
+    preg_match('/var param = "(.*?)"/s', $homepage, $matches);
 
     // Couldn't extract the API key from homepage source.
     if (!isset($matches[1])) throw new BadHomepageDataException();
